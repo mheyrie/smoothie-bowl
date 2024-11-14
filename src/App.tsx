@@ -1,11 +1,10 @@
 import './App.css';
+import FruitDisplay from "./component/Display";
 
 function App() {
   return (
     <div className="">
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+     <FruitDisplay/>
     </div>
   );
 }
