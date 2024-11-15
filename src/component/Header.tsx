@@ -1,7 +1,11 @@
+import {logo} from '../../public/logo512.png'
+
 export default function Header() {
   return (
     <nav className="flex justify-between">
-        <div className="">Logo</div>
+        <div className="">
+            <img src={logo} alt="header-logo" />
+        </div>
         <div className="">
             <ul className="flex justify-around">
                 <li className="">All Recipes</li>
