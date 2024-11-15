@@ -1,5 +1,5 @@
 export default function Header() {
   return (
-    <div>Header</div>
+    <div className="text-red-700">Header</div>
   )
 }
