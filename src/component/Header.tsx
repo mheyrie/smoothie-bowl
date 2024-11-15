@@ -1,10 +1,10 @@
-import {logo} from '../../public/logo512.png'
+
 
 export default function Header() {
   return (
     <nav className="flex justify-between">
         <div className="">
-            <img src={logo} alt="header-logo" />
+            <img src='/logo512.png' alt="header-logo" />
         </div>
         <div className="">
             <ul className="flex justify-around">
