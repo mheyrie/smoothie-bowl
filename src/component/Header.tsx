@@ -1,15 +1,14 @@
 export default function Header() {
   return (
-    <nav className="text-red-700">
+    <nav className="flex justify-between">
         <div className="">Logo</div>
         <div className="">
-            <ul className="">
+            <ul className="flex justify-around">
                 <li className="">All Recipes</li>
                 <li className="">Vegan</li>
                 <li className="">Gluten-Free</li>
-                <li className=""></li>
-                <li className=""></li>
-            </ul>
+                <li className="">Shop</li>
+                           </ul>
         </div>
     </nav>
   )
