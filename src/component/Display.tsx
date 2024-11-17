@@ -41,7 +41,7 @@ export default function FruitDisplay() {
         } min-h-screen flex flex-col items-center transition-colors duration-300`}
       >
         <Header />
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center items-center h-[80vh]">
           <h1 className="text-4xl font-bold mb-6">Choose a Fruit</h1>
           <div className="flex space-x-4">
             {fruits.map((fruit) => (
