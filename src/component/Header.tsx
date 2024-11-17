@@ -9,11 +9,11 @@ export default function Header() {
         />
       </div>
       <div className="">
-        <ul className="flex justify-between gap-6">
-          <li className="">All Recipes</li>
-          <li className="">Vegan</li>
-          <li className="">Gluten-Free</li>
-          <li className="">Shop</li>
+        <ul className="flex justify-between gap-8">
+          <li className="cursor-pointer">All Recipes</li>
+          <li className="cursor-pointer">Vegan</li>
+          <li className="cursor-pointer">Gluten-Free</li>
+          <li className="cursor-pointer">Shop</li>
         </ul>
       </div>
     </nav>
