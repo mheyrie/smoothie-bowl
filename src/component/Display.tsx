@@ -38,9 +38,8 @@ export default function FruitDisplay() {
       <div
         className={`${
           selectedFruit ? selectedFruit.color : "bg-PrimaryY"
-        } min-h-screen flex flex-col items-center justify-center transition-colors duration-300`}
+        } min-h-screen flex flex-col items-center transition-colors duration-300`}
       >
-        {" "}
         <Header />
         <h1 className="text-4xl font-bold mb-6">Choose a Fruit</h1>
         <div className="flex space-x-4">
