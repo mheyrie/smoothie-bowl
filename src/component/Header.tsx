@@ -10,10 +10,10 @@ export default function Header() {
       </div>
       <div className="">
         <ul className="flex justify-between gap-8">
-          <li className="cursor-pointer font-semibold">All Recipes</li>
-          <li className="cursor-pointer font-semibold">Vegan</li>
-          <li className="cursor-pointer font-semibold">Gluten-Free</li>
-          <li className="cursor-pointer font-semibold">Shop</li>
+          <li className="cursor-pointer">All Recipes</li>
+          <li className="cursor-pointer">Vegan</li>
+          <li className="cursor-pointer">Gluten-Free</li>
+          <li className="cursor-pointe">Shop</li>
         </ul>
       </div>
     </nav>

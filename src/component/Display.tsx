@@ -10,7 +10,7 @@ type Fruit = {
 const fruits: Fruit[] = [
   {
     name: "Apple",
-    color: "bg-red-500",
+    color: "bg-",
     description: "Apples are sweet and crisp.",
   },
   {
