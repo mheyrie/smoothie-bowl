@@ -5,28 +5,33 @@ type Fruit = {
   name: string;
   color: string;
   description: string;
+  image: string; // New property for image path
 };
 
 const fruits: Fruit[] = [
   {
     name: "Banana",
     color: "bg-[#FFF7CF]",
-    description: "Apples are sweet and crisp.",
+    description: "Bananas are soft and rich in potassium.",
+    image: "/images/banana.png",
   },
   {
     name: "Strawberry",
     color: "bg-[#FFE1E2]",
-    description: "Bananas are soft and rich in potassium.",
-  },
-  {
-    name: "Sour-soup",
-    color: "bg-[#ECFFCC]",
-    description: "Oranges are juicy and high in vitamin C.",
+    description: "Strawberries are juicy and sweet.",
+    image: "/images/strawberry.png",
   },
   {
     name: "Blueberry",
+    color: "bg-[#ECFFCC]",
+    description: "Blueberries are juicy and high in antioxidants.",
+    image: "/images/Bluberry.png",
+  },
+  {
+    name: "Banana",
     color: "bg-[#FFCBEA]",
-    description: "Berries are juicy and high in vitamin C.",
+    description: "Oranges are high in vitamin C.",
+    image: "/images/Banana.png",
   },
 ];
 
@@ -42,17 +47,20 @@ export default function FruitDisplay() {
       >
         <Header />
         <div className="flex flex-col justify-center items-center h-[80vh]">
-          <h1 className="text-4xl font-bold mb-6">Sip Your Way to
-          Bliss Taste</h1>
+          <h1 className="text-4xl font-bold mb-6">Sip Your Way to Bliss Taste</h1>
           <div className="flex space-x-4">
             {fruits.map((fruit) => (
               <button
                 key={fruit.name}
                 onClick={() => setSelectedFruit(fruit)}
-                className="px-4 py-2 rounded-lg font-semibold"
+                className="px-4 py-2 rounded-lg font-semibold flex items-center justify-center"
                 style={{ backgroundColor: fruit.color }}
               >
-                {fruit.name}
+                <img
+                  src={fruit.image}
+                  alt={fruit.name}
+                  className="h-12 w-12 object-contain"
+                />
               </button>
             ))}
           </div>
