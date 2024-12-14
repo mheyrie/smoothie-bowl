@@ -9,23 +9,23 @@ type Fruit = {
 
 const fruits: Fruit[] = [
   {
-    name: "Apple",
-    color: "bg-",
+    name: "Banana",
+    color: "bg-[#FFF7CF]",
     description: "Apples are sweet and crisp.",
   },
   {
-    name: "Banana",
-    color: "bg-yellow-400",
+    name: "Strawberry",
+    color: "bg-[#FFE1E2]",
     description: "Bananas are soft and rich in potassium.",
   },
   {
-    name: "Orange",
-    color: "bg-orange-500",
+    name: "Sour-soup",
+    color: "bg-[#ECFFCC]",
     description: "Oranges are juicy and high in vitamin C.",
   },
   {
     name: "Blueberry",
-    color: "bg-PrimaryY",
+    color: "bg-[#FFCBEA]",
     description: "Berries are juicy and high in vitamin C.",
   },
 ];
@@ -42,7 +42,8 @@ export default function FruitDisplay() {
       >
         <Header />
         <div className="flex flex-col justify-center items-center h-[80vh]">
-          <h1 className="text-4xl font-bold mb-6">Choose a Fruit</h1>
+          <h1 className="text-4xl font-bold mb-6">Sip Your Way to
+          Bliss Taste</h1>
           <div className="flex space-x-4">
             {fruits.map((fruit) => (
               <button
